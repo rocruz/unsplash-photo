@@ -20,8 +20,10 @@ GET /collection/all
 #### Parámetros
 ```
 filter :> Filtro aplicado. (Optional; default: null)
+```
 
 #### Ejemplo
+
 ```
 #### Request
 ```
