@@ -33,7 +33,6 @@ GET /collections/all?filter=1020971
 _Response_
 
 ```
-_Response_
 200 OK [
 [
     {
