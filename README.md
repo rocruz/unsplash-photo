@@ -24,13 +24,13 @@ filter :> Filtro aplicado. (Optional; default: null)
 
 #### Ejemplo
 
-```
-#### Request
+_Request
+
 ```
 GET /collections/all?filter=1020971
 ```
 
-#### Response
+_Response
 200 OK [
 [
     {
@@ -41,7 +41,7 @@ GET /collections/all?filter=1020971
     }
 ]
 
-## Construido con 🛠️
+### Construido con 🛠️
 
 * [Java 11](https://www.oracle.com/es/java/technologies/javase-jdk11-downloads.html - Versión de Java.
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
