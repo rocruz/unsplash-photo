@@ -22,15 +22,18 @@ GET /collection/all
 filter :> Filtro aplicado. (Optional; default: null)
 ```
 
-#### Ejemplo
+### Ejemplo
 
-_Request
+_Request_
 
 ```
 GET /collections/all?filter=1020971
 ```
 
-_Response
+_Response_
+
+```
+_Response_
 200 OK [
 [
     {
@@ -40,6 +43,7 @@ _Response
         "cover_photo_id": null
     }
 ]
+```
 
 ### Construido con 🛠️
 
