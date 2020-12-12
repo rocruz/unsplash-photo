@@ -66,7 +66,7 @@ public class PhotoInfoListCollection {
 					
 				.collect(Collectors.toList()):listPhotoSummary;
 				
-				return listPhotoSummaryReturn;
+		return listPhotoSummaryReturn;
 
 	}
 
