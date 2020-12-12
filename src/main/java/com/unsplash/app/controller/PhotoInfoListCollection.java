@@ -32,9 +32,11 @@ public class PhotoInfoListCollection {
 	public String url = "https://api.unsplash.com/collections/?client_id=ejcxMYgmWK3jRhq90P3UkVUDWWtsJ50DRCSqn4b_p10";
 
 	/**
-	 * Metodo que se encarga de obtener los campos indicados de las imagenes
+	 * Metodo que se encarga de obtener los campos indicados de las imagenes.
+	 * Si viene informado el parametro filter hara un filtrado sobre los 
+	 * campos id, title, description y cover_photo.id
 	 * 
-	 * @param filter:
+	 * @param filter: cadena con los datos a filtrar.
 	 * @return PhotoSummary[]:
 	 * @throws JsonMappingException
 	 * @throws JsonProcessingException
@@ -55,15 +57,16 @@ public class PhotoInfoListCollection {
 
 		List<PhotoSummary> listPhotoSummary = Arrays.asList(photoSummaries);
 
-		return listPhotoSummary
+		List<PhotoSummary> listPhotoSummaryReturn = null!=filter?listPhotoSummary
 				.stream()
-				.filter(a -> (null != filter) &&
-						     (null !=  a.getId() && a.getId().contains(filter)) ||
+				.filter(a -> (null !=  a.getId() && a.getId().contains(filter)) ||
 							 (null !=  a.getCover_photo_id() && a.getCover_photo_id().contains(filter)) ||
 							 (null !=  a.getDescription() && a.getDescription().contains(filter)) ||
 							 (null !=  a.getTitle() && a.getTitle().contains(filter)))
 					
-				.collect(Collectors.toList());
+				.collect(Collectors.toList()):listPhotoSummary;
+				
+				return listPhotoSummaryReturn;
 
 	}
 
