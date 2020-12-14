@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "62ed719f-3fa0-4b24-818f-596f85621986",
+		"name": "UNPLASH list-collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "unplash list-collections all",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://api.unsplash.com/collections/",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://api.unsplash.com/collections/",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "swFAGG13O7nja0ZHvBVhw_N4gjx9gVLbf7YjTtxdf_g",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ejcxMYgmWK3jRhq90P3UkVUDWWtsJ50DRCSqn4b_p10",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "OAuth",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "swFAGG13O7nja0ZHvBVhw_N4gjx9gVLbf7YjTtxdf_g",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "OAuth",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "ejcxMYgmWK3jRhq90P3UkVUDWWtsJ50DRCSqn4b_p10",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/collections/all?filter=1020971",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"collections",
+						"all"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "1020971"
+						}
+					]
+				},
+				"description": "https://unsplash.com/documentation#list-collections"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3b35b18b-2847-4ed4-b87d-e1e58feb084a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "df96cc64-1c9f-4c2e-adfa-7b7c9c41d4e4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
