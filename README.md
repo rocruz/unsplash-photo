@@ -47,14 +47,13 @@ _Response_
 
 ### Pasos a seguir para su funcionamiento
 
- - docker pull rocruz92/unsplashapp:v1     
- - docker run rocruz92/unsplashapp:v1   
- - docker ps -a    
-  bcd2ba6edb3b        rocruz92/unsplashapp:v1   "/bin/sh -c 'java -D…"   5 minutes ago       Exited (1) 3 minutes ago.       
- - docker start bcd2ba6edb3b   
-  bcd2ba6edb3b        rocruz92/unsplashapp:v1   "/bin/sh -c 'java -D…"   5 minutes ago       Up 3 seconds        8080/tcp, 8778/tcp, 9779/tcp   optimistic_kilby. 
- - docker ps  
-  bcd2ba6edb3b        rocruz92/unsplashapp:v1   "/bin/sh -c 'java -D…"   5 minutes ago       Up 3 seconds        8080/tcp, 8778/tcp, 9779/tcp   optimistic_kilby. 
+ $ docker pull rocruz92/unsplashapp:v1     
+ $ docker run -i -p 8080:8080 rocruz92/unsplashapp:v1   
+ $ docker ps        
+  d519ae33668e        rocruz92/unsplashapp:v1   "/bin/sh -c 'java -D…"   5 minutes ago       Up 5 minutes        8778/tcp, 0.0.0.0:8080->8080/tcp, 9779/tcp   kind_tu. 
+      
+ 
+ URL con la que sacar los datos de la colección -> http://localhost:8080/collections/all
 
 
 ### Construido con 🛠️
