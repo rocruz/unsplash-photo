@@ -22,10 +22,7 @@ import com.unsplash.app.dto.PhotoSummary;
 @RestController
 @RequestMapping("/collections")
 public class PhotoInfoListCollection {
-
-	@Value("${api.key}")
-	private String apiKey;
-
+	
 	@Autowired
 	private RestTemplate restTemplate;
 
